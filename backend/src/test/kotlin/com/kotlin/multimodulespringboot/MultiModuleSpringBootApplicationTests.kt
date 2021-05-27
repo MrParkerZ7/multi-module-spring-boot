@@ -1,13 +1,13 @@
 package com.kotlin.multimodulespringboot
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import org.springframework.boot.test.context.SpringBootTest
 
-@SpringBootTest
-class MultiModuleSpringBootApplicationTests {
+internal class MultiModuleSpringBootApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+    @Test
+    fun learnBackendTest() {
+        assertEquals("learnBackend", learnBackend())
+    }
 
 }

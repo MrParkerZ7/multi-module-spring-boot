@@ -7,5 +7,10 @@ import org.springframework.boot.runApplication
 class MultiModuleSpringBootApplication
 
 fun main(args: Array<String>) {
-	runApplication<MultiModuleSpringBootApplication>(*args)
+    runApplication<MultiModuleSpringBootApplication>(*args)
+}
+
+fun learnBackend(): String {
+    println("XXX: ${addTwoPlusTwo()}")
+    return "learnBackend"
 }

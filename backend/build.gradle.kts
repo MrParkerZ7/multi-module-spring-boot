@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":test-utils"))
+    implementation(project(":demo:multi-module-spring-boot:test-utils"))
 
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
@@ -14,5 +14,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+    }
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
