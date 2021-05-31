@@ -7,6 +7,7 @@ plugins {
 
 dependencies {
     implementation(project(":test-utils"))
+    implementation(project(":sub-module"))
 
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))

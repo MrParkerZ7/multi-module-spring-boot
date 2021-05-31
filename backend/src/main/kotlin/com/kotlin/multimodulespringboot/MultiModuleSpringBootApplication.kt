@@ -12,5 +12,6 @@ fun main(args: Array<String>) {
 
 fun learnBackend(): String {
     println("XXX: ${addTwoPlusTwo()}")
+    subModule("MainModule")
     return "learnBackend"
 }
