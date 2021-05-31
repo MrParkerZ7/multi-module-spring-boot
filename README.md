@@ -1,4 +1,4 @@
-[Fork] SubProject of : https://github.com/MrParkerZ7/terraform-aws-lambda-microservice.git
+[Fork] Update lib version
 
 # Multi-module Spring Boot project in Kotlin DSL
 

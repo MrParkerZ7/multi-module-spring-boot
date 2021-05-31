@@ -6,7 +6,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":demo:multi-module-spring-boot:test-utils"))
+    implementation(project(":test-utils"))
 
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib-jdk8"))
